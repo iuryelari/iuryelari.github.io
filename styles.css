@@ -427,3 +427,44 @@ body {
     .popup h2 { font-size: 18px; }
     .btn-lg { padding: 12px 30px; font-size: 12px; }
 }
+
+ {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.countdown-ian-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.countdown-ian-box {
+    background: #f6f7f8;
+    padding: 22px 28px;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 100px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.countdown-ian-number {
+    font-family: "Magnolia Script", cursive;
+    font-size: 42px;
+    color: #404951;
+    border-bottom: 1px solid #40495130;
+    padding-bottom: 5px;
+}
+
+.countdown-ian-label {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #404951;
+    opacity: 0.75;
+    margin-top: 6px;
+    letter-spacing: 1px;
+}
