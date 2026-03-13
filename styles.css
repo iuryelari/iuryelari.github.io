@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Bryndan Write';
-  src: url('fonts/Bryndan_Write.ttf') format('truetype');
+  font-family: 'Magnolia Script';
+  src: url('fonts/Magnolia_Script.otf') format('truetype');
 }
 
 
@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Bryndan Write;
+    font-family: Magnolia Script;
     font-size:25px;
 }
 
@@ -20,7 +20,7 @@ html {
 body {
     background-color: #ffffff;
     color: #868686;
-    font-family: 'Bryndan Write','Lato', sans-serif;
+    font-family: 'Magnolia Script','Lato', sans-serif;
     font-size: 16px;
     line-height: 1.6;
 }
@@ -99,7 +99,7 @@ body {
 }
 
 .wed-couple-name {
-    font-family: 'Bryndan Write','Libre Baskerville', serif;
+    font-family: 'Magnolia Script','Libre Baskerville', serif;
     font-size: 30px;
     color: #404951;
     display: flex;
@@ -148,7 +148,7 @@ body {
 }
 
 .section-title {
-    font-family: 'Bryndan Write','Libre Baskerville', serif;
+    font-family: 'Magnolia Script','Libre Baskerville', serif;
     font-size: 28px;
     text-align: center;
     color: #404951;
@@ -313,7 +313,7 @@ body {
 }
 
 .popup h2 {
-    font-family: 'Bryndan Write','Libre Baskerville', serif;
+    font-family: 'Magnolia Script','Libre Baskerville', serif;
     font-size: 20px;
     margin-bottom: 20px;
     color: #404951;
@@ -334,7 +334,7 @@ body {
     margin-top: 5px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-family: 'Bryndan Write','Lato', sans-serif;
+    font-family: 'Magnolia Script','Lato', sans-serif;
 }
 
 .popup-actions {
@@ -364,7 +364,7 @@ body {
 /* título das seções */
 .section-title{
     text-align:center;
-    font-family: 'Bryndan Write','Libre Baskerville', serif;
+    font-family: 'Magnolia Script','Libre Baskerville', serif;
     font-size:32px;
     margin-bottom:30px;
     color:#2c2c2c;
