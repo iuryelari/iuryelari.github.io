@@ -44,6 +44,33 @@
                     <img class="image-beach-mobile" src="imagem-topo.png" alt="Na Beira do Mar" />
                 </header>
 
+<div class="countdown-ian-container">
+
+    <div class="countdown-ian-wrapper">
+
+        <div class="countdown-ian-box">
+            <div id="countdown-ian-days" class="countdown-ian-number">0</div>
+            <div class="countdown-ian-label">Dias</div>
+        </div>
+
+        <div class="countdown-ian-box">
+            <div id="countdown-ian-hours" class="countdown-ian-number">0</div>
+            <div class="countdown-ian-label">Horas</div>
+        </div>
+
+        <div class="countdown-ian-box">
+            <div id="countdown-ian-minutes" class="countdown-ian-number">0</div>
+            <div class="countdown-ian-label">Minutos</div>
+        </div>
+
+        <div class="countdown-ian-box">
+            <div id="countdown-ian-seconds" class="countdown-ian-number">0</div>
+            <div class="countdown-ian-label">Segundos</div>
+        </div>
+
+    </div>
+
+</div>
                 <div class="sdn-wrapper-content">
                     <div class="sdn-content">
                         
@@ -274,6 +301,35 @@
     </div>
 
     <script src="script.js"></script>
+<script>
+
+const countdownIanTarget = new Date("2026-08-08T15:00:00");
+
+function countdownIanUpdate() {
+
+    const now = new Date();
+    const diff = countdownIanTarget - now;
+
+    if (diff <= 0) {
+        document.querySelector(".countdown-ian-wrapper").innerHTML = "Tempo esgotado";
+        return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("countdown-ian-days").textContent = days;
+    document.getElementById("countdown-ian-hours").textContent = hours;
+    document.getElementById("countdown-ian-minutes").textContent = minutes;
+    document.getElementById("countdown-ian-seconds").textContent = seconds;
+}
+
+countdownIanUpdate();
+setInterval(countdownIanUpdate, 1000);
+
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
