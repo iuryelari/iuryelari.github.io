@@ -468,3 +468,12 @@ body {
     margin-top: 6px;
     letter-spacing: 1px;
 }
+
+.detail-card-full {
+    grid-column: 1 / -1;
+}
+
+.detail-card-full iframe {
+    height: 260px;
+}
+
